@@ -1,56 +1,41 @@
-# Linear Algebra Projects & Theoretical Implementations
+# Linear Algebra Assignments & Practical Implementations
 
 ## Overview
-This repository contains the practical coding assignments and theoretical explorations completed as part of the **Linear Algebra** coursework. The primary objective of this project is to bridge the gap between abstract mathematical concepts and their computational implementations using Python. 
 
-The repository is divided into two main modules, each consisting of algorithmic implementations (completing core mathematical structures) and comprehensive theoretical analyses.
+This repository contains two independent practical assignments completed for the Linear Algebra course. The work bridges theoretical concepts in linear algebra with Python-based computational applications, including facial recognition, PageRank analysis, and image compression using Singular Value Decomposition (SVD).
 
 ## Repository Structure
 
-```text
-├── Assignment_01/
-│   ├── notebooks/          # Jupyter notebooks with completed implementations
-│   ├── report_fa.pdf       # Theoretical questions and analytical proofs (in Persian)
+```
+├── Assignment_1_Eigen_Everything/
+│   ├── notebooks/          # Eigenvalues, Eigenvectors, Face Recognition, and PageRank
 │   └── ...
-├── Assignment_02/
-│   ├── notebooks/          # Jupyter notebooks with completed implementations
-│   ├── report_fa.pdf       # Theoretical questions and analytical proofs (in Persian)
+├── Assignment_2_SVD/
+│   ├── notebooks/          # Singular Value Decomposition (SVD) and Image Compression
+│   ├── input_image.jpg     # Target image for SVD compression
 │   └── ...
 └── README.md
 ```
 
-## Assignments Summary
+## Assignment Details
 
-### 1. Assignment 1: [Insert Topic Name, e.g., Matrix Decompositions & Linear Systems]
-* **Computational Implementation:** Implemented core linear algebra algorithms from scratch, focusing on numerical stability and vectorization (e.g., `[mention specific methods like Gaussian Elimination, LU Decomposition, or Vector Spaces]`).
-* **Theoretical Analysis:** Addressed foundational theoretical questions regarding `[mention topics, e.g., linear independence, rank, and subspaces]`, documented in detail (in Persian).
+### 1. Assignment 1: Eigen-Everything (Face Recognition & PageRank)
+* **Topics Covered:** Eigenvalues, eigenvectors, spectral properties, and matrix factorizations.
+* **Key Implementations:**
+  * **Eigenfaces & Facial Recognition:** Applied eigenvalue decomposition and principal components to facial image datasets for dimensionality reduction and recognition.
+  * **PageRank Algorithm:** Implemented the iterative PageRank link analysis model using transition matrices and eigenvalue/eigenvector formulations to rank web pages.
 
-### 2. Assignment 2: [Insert Topic Name, e.g., Eigenvalues, SVD, and Applications]
-* **Computational Implementation:** Developed practical applications of advanced matrix operations, including `[mention specific methods like Eigenvalue Decomposition, Singular Value Decomposition (SVD), or PCA]`.
-* **Theoretical Analysis:** Provided analytical solutions and proofs for problems concerning `[mention topics, e.g., orthogonality, least squares, and diagonalization]` (in Persian).
+### 2. Assignment 2: SVD & Image Compression
+* **Topics Covered:** Singular Value Decomposition (SVD) and matrix approximation.
+* **Key Implementations:**
+  * **Low-Rank Image Approximation:** Loaded an input image (`input_image.jpg`), converted it into a numerical matrix, and applied SVD to reconstruct the image using a truncated number of singular values, demonstrating data compression and quality tradeoffs.
 
 ## Technologies & Tools
+
 * **Programming Language:** Python 3.x
-* **Libraries:** NumPy, SciPy, Matplotlib
+* **Libraries:** NumPy, SciPy, Matplotlib, OpenCV/PIL (depending on image handling)
 * **Environment:** Jupyter Notebook
 
-## How to Run
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/[your-username]/[your-repo-name].git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd [your-repo-name]
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install numpy scipy matplotlib jupyter
-   ```
-4. Launch Jupyter Notebook to explore the code and visualizations:
-   ```bash
-   jupyter notebook
-   ```
+## AI Assistance Disclosure
 
-## Language Note
-While the codebase, comments, and documentation are in **English**, the detailed mathematical proofs and theoretical answers are written in **Persian (Farsi)** as per the course requirements.
+In accordance with academic transparency, parts of the code structuring, optimization, and documentation within these assignments were developed and refined with the assistance of artificial intelligence (AI) tools.
